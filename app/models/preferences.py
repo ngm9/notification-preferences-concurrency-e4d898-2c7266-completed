@@ -2,6 +2,9 @@ from pydantic import BaseModel, field_validator
 from typing import Optional
 from uuid import UUID
 
+class UsersPreferences(BaseModel):
+    user_id: UUID
+    tenant_id: UUID
 
 class NotificationPreferences(BaseModel):
     user_id: UUID
